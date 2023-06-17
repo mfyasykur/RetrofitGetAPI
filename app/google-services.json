@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "362564194663",
+    "firebase_url": "https://androidproject1-74ac3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "androidproject1-74ac3",
+    "storage_bucket": "androidproject1-74ac3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362564194663:android:ad295c68d0eecc3ec6dfc2",
+        "android_client_info": {
+          "package_name": "com.ppb.retrofitgetapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362564194663-i8udhiik8ju5id9r56ms3gt0b9ihjti7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDX0JCYboYO0sIMG-pQ74AF7jCDNHEI24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362564194663-i8udhiik8ju5id9r56ms3gt0b9ihjti7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
