@@ -5,50 +5,76 @@
     android:id="@+id/cv_main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="4dp">
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="8dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_margin="15dp">
 
         <ImageView
             android:id="@+id/iv_profile"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_avatar"/>
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_avatar"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/ib_edit"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_alignParentEnd="true"
+            android:onClick="Save"
+            android:src="@drawable/ic_edit"
+            android:backgroundTint="#0095F6"/>
 
-            <TextView
-                android:id="@+id/tv_nim"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="20102010"
-                android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/tv_nama"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Alexander Kartoyo"
-                android:textSize="14sp"/>
-            <TextView
-                android:id="@+id/tv_telp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="08310613843"
-                android:textSize="14sp"/>
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/ib_edit"
+            android:src="@drawable/ic_delete"
+            android:backgroundTint="#C2492D"/>
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/iv_profile"
+            android:text="Nama"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nama"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/iv_profile"
+            android:text="NIM "
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_telp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nim"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/iv_profile"
+            android:text="Telepon"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
